@@ -6,7 +6,7 @@ Olá, estou iniciando o projeto **#30DiasDeAWS** para ajudar a organizar os meus
 
 Sou a Ana Luiza, trabalho com cloud desde 2020, minha primeira experiência foi com GCP (Google Cloud Platform) e desde 2021 estou no mundo AWS trabalhando em um banco laranja beeem conhecido por todos, aquele que começa com "i" (uma charada, tem duas alternativas). 
 
-Aqui vou postar meu progresso de estudos independente para fixar melhor os conceitos. Espero que esse material sirva para ajudar mais alguém a passar no exame também.
+Aqui vou postar meu progresso de estudos em tópicos resumidos para fixar melhor os conceitos. Espero que esse material sirva para ajudar mais alguém a passar no exame também.
 
 Vamos começar com alguns conceitos básicos.
 
@@ -92,4 +92,37 @@ Cada tipo de instância EC2 é agrupada dentro de uma família de instâncias.
  - Spot instances
  - Dedicated hosts
 
- 
+### Escalabilidade e Elasticidade
+
+## 1.7 - AWS EC2 Auto Scaling
+
+Permite adicionar ou remover automaticamente instâncias EC2 em resposta a mudança de demanda da aplicação. 
+
+### Abordagens 
+
+ - **Dynamic Scaling:** Responde a mudança de demanda.
+
+ - **Predictive Scaling:** Programa automaticamente o número correto de instâncias EC2 baseado em uma demanda prevista. 
+
+Existem outras duas formas de lidar com altas demandas:
+
+ - **Scale Up:** Adicionar mais recursos à demanda. 
+
+ - **Scale Out:** Remover os recursos quando não mais precisar.
+
+
+## 1.8 - Amazon Elastic Load Balancing
+
+O Load Balance resolve problemas de tráfego nas aplicações. Ele roteia as requisições para as instâncias processarem. 
+ - Regional Construct 
+ - Escala automaticamente 
+ - Alta disponibilidade
+
+O **ELB** distribui automaticamente o tráfego em aplicações por multiplos recursos, como instâncias EC2.
+
+<p style="color:RED">ATENÇÃO!</p>
+
+> Elastic Load Balancing != EC2 Auto Scaling
+
+Keywords:
+> High-demand and Low-demand
